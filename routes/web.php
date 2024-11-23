@@ -2,8 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.homepage');
+});
+
+Route::get('/flight-list', function () {
+    return view('home.flightlist');
+});
+
+Route::get('/booking', function () {
+    return view('home.booking');
 });
 
 Auth::routes();
